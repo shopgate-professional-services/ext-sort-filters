@@ -13,7 +13,7 @@ module.exports = async (context, { filters }) => {
 
   if (sortValuesByLabel) {
     filters.forEach(filter => {
-      if (filter.type !== 'multiselect') {
+      if (filter.type === 'range') {
         return
       }
 
