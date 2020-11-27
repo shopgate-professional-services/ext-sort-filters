@@ -1,6 +1,6 @@
 # Shopgate Connect - Sort filters and filters values
 
-Sorting filters and filters values for search and category pages.
+Sorting filters and filter values for search and category pages.
 
 ## Configuration
 

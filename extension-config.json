@@ -7,17 +7,14 @@
       "destination": "backend",
       "default": false,
       "params": {
-        "type": "json" ,
+        "type": "checkbox" ,
         "label": "Sort filters by label"
       }
     },
     "sortFilters": {
       "type": "admin",
       "destination": "backend",
-      "default": {
-        "display_amount": -10,
-        "categories": -9
-      },
+      "default": null,
       "params": {
         "type": "json" ,
         "label": "Priorities for sorting filters"
@@ -28,16 +25,14 @@
       "destination": "backend",
       "default": false,
       "params": {
-        "type": "json" ,
+        "type": "checkbox" ,
         "label": "Sort values by label"
       }
     },
     "sortValues": {
       "type": "admin",
       "destination": "backend",
-      "default": {
-        "size": "XS,S,M,L,XL"
-      },
+      "default": null,
       "params": {
         "type": "json" ,
         "label": "Map for sorting of filter values"
