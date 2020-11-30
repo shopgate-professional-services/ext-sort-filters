@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "id": "@shopgate-project/sort-filters",
+  "configuration": {
+    "sortFiltersByLabel": {
+      "type": "admin",
+      "destination": "backend",
+      "default": false,
+      "params": {
+        "type": "checkbox" ,
+        "label": "Sort filters by label"
+      }
+    },
+    "sortFilters": {
+      "type": "admin",
+      "destination": "backend",
+      "default": null,
+      "params": {
+        "type": "json" ,
+        "label": "Priorities for sorting filters"
+      }
+    },
+    "sortValuesByLabel": {
+      "type": "admin",
+      "destination": "backend",
+      "default": false,
+      "params": {
+        "type": "checkbox" ,
+        "label": "Sort values by label"
+      }
+    },
+    "sortValues": {
+      "type": "admin",
+      "destination": "backend",
+      "default": null,
+      "params": {
+        "type": "json" ,
+        "label": "Map for sorting of filter values"
+      }
+    }
+  },
+  "components": [],
+  "steps": [
+    {
+      "path": "extension/sortFilters.js",
+      "hooks": ["shopgate.catalog.getFilters.v1:after"],
+      "input": [{ "key": "filters" }],
+      "output": [{ "key": "filters" }]
+    },
+    {
+      "path": "extension/sortValues.js",
+      "hooks": ["shopgate.catalog.getFilters.v1:after"],
+      "input": [{ "key": "filters" }],
+      "output": [{ "key": "filters" }]
+    }
+  ]
+}

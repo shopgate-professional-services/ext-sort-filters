@@ -1,0 +1,18 @@
+{
+  "name": "@shopgate-project/sort-filters",
+  "version": "1.0.0",
+  "description": "",
+  "license": "Apache 2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shopgate-professional-services/ext-sort-filters.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --use_strict --recursive test",
+    "standard": "./node_modules/.bin/standard"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "standard": "^16.0.3"
+  }
+}
